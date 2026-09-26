@@ -1,0 +1,9 @@
+# ESP-IDF build outputs & toolchain configuration
+build/
+#sdkconfig
+#sdkconfig.old
+#managed_components/
+
+# IDE files
+.vscode/
+.idea/

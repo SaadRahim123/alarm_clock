@@ -1,0 +1,16 @@
+{
+  "codename": "liberation",
+  "ttf_path": "/assets/LiberationMono-Bold.ttf",
+  "bin_path": "/assets/ui_font_liberation.bin",
+  "c_path": "/assets/ui_font_liberation.c",
+  "cfg_path": "/assets/ui_font_liberation.fcfg",
+  "size": 120,
+  "bpp": 4,
+  "letters": 0,
+  "ranges": [
+    "0x20-0x7f"
+  ],
+  "symbols": "",
+  "customparams": "--no-compress --no-prefilter",
+  "uploaded": false
+}
