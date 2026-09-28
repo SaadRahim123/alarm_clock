@@ -33,16 +33,27 @@
 #define LCD_PARAM_BITS      8
 #define LCD_BITS_PER_PIXEL  16
 
-
+#define ONE_MINUTE_EPOCH_TIME   60
 
 /*Threads parameters*/
 #define WIFI_TASK_STACK_SIZE        4096
 #define WIFI_TASK_PRIORITY          5
+#define GUI_TASK_STACK_SIZE         4096
+#define GUI_TASK_PRIORITY           5
+
+typedef struct DeviceData_t
+{
+    bool isTimeSynced;
+    int timezone_offset;
+}DeviceData_t;
+
+
+extern DeviceData_t deviceData;
 
 /******FUNCTION PROTOTYPES *********/
 void backlight_init(void);
 void backlight_set(int pct);
 lv_display_t *display_init(void);
 
-
+unsigned long millis();
 #endif  /*_MAIN_H*/
